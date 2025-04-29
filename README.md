@@ -26,3 +26,8 @@ locust
 
 После нагрузки:
 ![осле нагрузки](https://github.com/Boropwnz/architecture-insuretech/blob/sprint_6/Task2/after_load.jpg)
+
+
+
+# Task 6
+[nginx.conf](https://github.com/Boropwnz/architecture-insuretech/blob/sprint_6/Task6/nginx.conf)
