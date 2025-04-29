@@ -21,7 +21,7 @@ GSLB позволит делать health check и оптимально пере
 Каждый экземпляр PostgreSQL в кластере поддерживает согласованность с другими узлами посредством потоковой репликации. Асинхронная репликация между ЦОДами не реже чем раз в 15 минут позволят достичь требуемого RPO.
 
 
-[Схема drawio](https://github.com/Boropwnz/architecture-insuretech/blob/sprint_6/Task1/InsureTech_%D1%82%D0%B5%D1%85%D0%BD%D0%BE%D0%BB%D0%BE%D0%B3%D0%B8%D1%87%D0%B5%D1%81%D0%BA%D0%B0%D1%8F_%D0%B0%D1%80%D1%85%D0%B8%D1%82%D0%B5%D0%BA%D1%82%D1%83%D1%80%D0%B0-to-be.drawio)
+[Схема drawio](https://github.com/Boropwnz/architecture-insuretech/blob/sprint_6/Task1/InsureTech_to_be.drawio)
 
 ![Схема drawio](https://github.com/Boropwnz/architecture-insuretech/blob/sprint_6/Task1/InsureTech_to_be.png)
 
@@ -135,7 +135,23 @@ spec:
 
 # Task 4
 
+Теперь вам нужно проработать ещё несколько моментов, исходя из требований бизнеса. Доработайте схему, которая у вас получилась в третьем задании. Отразите на ней ваши решения по этим вопросам:
+Проработайте реализацию osago-aggregator. Решите:
+Требуется ли ему своё хранилище данных?
+Какой API он предоставляет core-app?
+Определите средство интеграции между сервисами core-app и osago-aggregator.
+Подумайте над API для веб-приложения в core-app.
+Определите средство интеграции между веб-приложением и core-app. Если будете использовать средство, отличное от REST, отразите интеграцию новой стрелкой.
+В зависимости от выбранных средств интеграции подумайте, требуется ли где-то применение паттернов отказоустойчивости:
+Rate Limiting,
+Circuit Breaker,
+Retry,
+Timeout.
+Отобразите применение паттернов на схеме с помощью обозначений из этой библиотеки.
+Примите во внимание, что сервисы задеплоены в нескольких экземплярах. Подумайте, зависит ли ваше решение от этого.
 
+[InsureTech-to-be.drawio](https://github.com/Boropwnz/architecture-insuretech/blob/sprint_6/Task4/InsureTech-to-be.drawio):
+![](https://github.com/Boropwnz/architecture-insuretech/blob/sprint_6/Task4/InsureTech-to-be.png)
 
 # Task 5
 Содержимое [client-inf.graphql](https://github.com/Boropwnz/architecture-insuretech/blob/sprint_6/Task5/client-inf.graphql):
